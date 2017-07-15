@@ -48,5 +48,6 @@
 	<modules>
 		<module>01FirstExample</module>
 		<module>02ReadingList-chap2</module>
+		<module>03ReadingList-chap3</module>
 	</modules>
 </project>
