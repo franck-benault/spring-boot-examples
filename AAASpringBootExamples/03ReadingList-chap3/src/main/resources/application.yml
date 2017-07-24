@@ -3,8 +3,9 @@ error:
     enabled: false
 
 amazon:
-  associate_id: habuma-20
+  associate_id: habuma-201
 
 logging:
   level:
-    root: DEBUG
+    root: WARN
+    org.springframework.security: DEBUG		    
