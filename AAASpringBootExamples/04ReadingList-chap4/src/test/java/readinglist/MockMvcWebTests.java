@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.security.test.context.support.WithUserDetails;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -28,7 +29,7 @@ import readinglist.Reader;
 public class MockMvcWebTests {
 
   @Autowired
-  WebApplicationContext webContext;
+  private WebApplicationContext webContext;
   private MockMvc mockMvc;
 
   @Before
@@ -63,5 +64,8 @@ public class MockMvcWebTests {
         .andExpect(model().attribute("books", hasSize(0)))
         .andExpect(model().attribute("amazonID", "habuma-20"));
   }
+  
+  
+
 
 }
