@@ -1,6 +1,7 @@
 package readinglist;
 
 import static org.hamcrest.Matchers.*;
+import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -38,6 +39,8 @@ public class MockMvcWebTests {
         .apply(springSecurity())
         .build();
   }
+  
+ 
   
   @Test
   public void homePage_unauthenticatedUser() throws Exception {
